@@ -1,0 +1,78 @@
+.banner-giohang {
+    height: 100px !important;
+    width: 100%;
+    object-fit: fill;
+  }
+  .sanpham-giohang {
+    height: 100px;
+    width: 100px;
+    object-fit: fill;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #delete_1{
+    margin-top: 15px;
+  }
+  /* css cho màn pc  */
+  .list-cart{
+    /* width: 100%;
+    height: 200px;
+    border: 1px solid rgba(196, 196, 196, 0.9); */
+    /* margin-bottom: 50px; */
+  }
+  .list-cart-item{
+    display: grid;
+    height: 170px;
+    margin-bottom: 10px;
+    grid-template-columns: 0.7fr 2.5fr 0.7fr;
+    border: 1px solid rgba(196, 196, 196, 0.9);
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list-total{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .number{
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  .canh-so {
+    text-align: center;
+  }
+  .canh-chu {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+   /* responsive cho màn mob */
+    .sanpham-giohang{
+      height: 110px;
+      margin-left: 4px;
+      width: 80px;
+    }
+    .list-cart-name {
+      margin: 0px 10px;
+    }
+    #delete_1{
+      font-size: 8px;
+    }
+    .list-total p{
+      font-size: 10px;
+      width: 80px;
+    }
+    .number{
+      width: 30px;
+     height: 20px;
+      /* float: right; */
+    }
+     .list-cart-name p{
+       font-size: 13px;
+     }
+  }
+  

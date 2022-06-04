@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/thanh-toan.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="../css/home.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>THANH TOÁN</title>
+</head>
+<body class="body">
+    <!-- header -->
+    <div class="container">
+        <div class="header header--mobile">
+            <div class="row col-md-12 p-0 m-0 top-logo">
+            <div class="col-lg-2 col-md-2 m-0 p-0 logo-home">
+                <a href="home.html" class="logo-home-flex">
+                <img
+                src="../img/LOGO.png"
+                alt=""
+                srcset=""
+                width="100%"
+                height="140px"
+                class="img-logo-home"
+                />
+            </a>
+            <div class="logo-home-login">
+                <form class="search-login-mob">
+                <input
+                    class="form-control mr-2 search-login-mob"
+                    type="search"
+                    placeholder="Tìm kiếm..."
+                />
+                <i class="fa fa-search icon-search-mob"></i>
+                </form>
+                <div>
+    
+                <a class="register-mob" href="#" data-toggle="modal" data-target="#myModal3mob">ĐĂNG KÝ</a>
+    
+                <a href="#" class="login-mob" data-toggle="modal" data-target="#myModal2mob">ĐĂNG NHẬP <i
+                   ></i></a>
+                </div>
+    
+            </div>
+            
+            </div>
+            <nav
+                class="col-lg-10 col-md-10 col-10 p-4 navbar navbar-expand-md big-black navbar-dark navbar--home px-1 sitcky-top nav-login-home"
+            >
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+                >
+                <span class="navbar-toggler-icon right"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                <form class="form-inline my-3">
+                    <input
+                    class="form-control mr-2 search-bar"
+                    type="search"
+                    placeholder="Tìm kiếm..."
+                    />
+                    <i class="fa fa-search icon-search"></i>
+                </form>
+                <div class="my-md-4 header-links ">
+                <a class="px-5 text-white" href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</a>
+    
+                <a href="#" class=" text-white" data-toggle="modal" data-target="#myModal2">ĐĂNG NHẬP <i
+                    ></i></a>
+            
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+    
+                        <!-- Modal Header -->
+                        <div class="modal-header modal-css">
+                        <h2 class="modal-title">ĐĂNG KÝ</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <!-- Modal body -->
+                        <div class="modal-body modal-css">
+                        <form action="">
+                            <div class="form-group">
+                            <label for="">Họ và tên:</label>
+                            <input type="" class="form-control" id="" placeholder="Họ và tên" name="">
+    
+                            <label for="">Số điện thoại</label>
+                            <input type="" class="form-control" id="" placeholder="Số điện thoai" name="">
+                            <label for="">ngày sinh::</label>
+                            <input type="date" class="form-control datee">
+                            <label for="">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                name="email">
+                            </div>
+                            <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd">
+                            </div>
+                            <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name=""> Đồng ý với các điều
+                                khoản</label>
+                            </div>
+    
+                        </form>
+    
+                        </div>
+    
+                        <!-- Modal footer -->
+                        <div class="modal-footer modal-css">
+                        <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG KÝ NGAY</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+    
+                        <!--Modal Header -->
+                        <div class="modal-header modal-css">
+                        <h2 class="modal-title">ĐĂNG NHẬP</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <!-- Modal body -->
+                        <div class="modal-body modal-css">
+                        <form action="">
+                            <div class="form-group">
+    
+                            <label for="">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                name="email">
+                            </div>
+                            <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                                name="pswd">
+                        </form>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer modal-css">
+                        <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG NHẬP NGAY</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                </div>         
+            </nav>
+            </div>
+            <div class="row col-md-12 p-0 m-0">
+            <div class="col-md-12">
+                <div class="row nav">
+                <nav
+                    class="navbar navbar-expand-md big-black navbar-dark px-1 sitcky-top"
+                >
+                    <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapsibleNavbar"
+                    >
+                    <span class="navbar-toggler-icon right"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/home.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/trang-san-pham.html">SẢN PHẨM </a>
+                        </li>
+                        <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/trang-tin-tuc-khuyen-mai.html">TIN TỨC - KHUYẾN MÃI</a>
+                        </li>
+                        <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/trang-lien-he.html">LIÊN HỆ</a>
+                        </li>
+                        <li class="nav-item px-2 ">
+                        <a class="nav-link" href="../html/gio-hang.html">GIỎ HÀNG</a>
+                        
+                        </li>
+                    </ul>
+                    
+                    </div>
+                </nav>
+                </div>
+            </div>
+            </div>
+    </div>
+    <!-- content -->
+    <div class="container my-2 ">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-11 body-pay">
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <h1 class="text-uppercase my-2">THANH TOÁN</h1>
+                        <div class="row pay"></div>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <h3>Giỏ hàng</h3>
+                        
+                        <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">TÊN SẢN PHẨM</th>
+                                <th scope="col">SỐ LƯỢNG</th>
+                                <th scope="col">GIÁ TIỀN</th>
+                                <th scope="col">TRẠNG THÁI</th>
+                                <th scope="col">HÀNH ĐỘNG</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <div class="d-flex justify-content-center">
+                                        
+                                        <img src="../PHOTO/SAN-PHAM/sanpham10.JPG" width="50px" height="50px" alt="">
+                                        <p class="nameproduct">iSum 13</p>
+                                    </div> 
+                                </td>
+                                <td>1</td>
+                                <td>120.0000đ</td>
+                                <td>Mới</td>
+                                <td><a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                          
+                
+                        <div class="row pay"></div>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <h3>Thông tin khách hàng</h3>
+                        <div class="row pay"></div>
+                        <form action="#">
+                            <div class="row my-2">
+                                <div class="col-5">
+                                    <div class="input-group my-2">
+                                        <input type="text" class="form-control" width="40px" placeholder="Họ và tên">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-5">
+                                    <div class="input-group my-1">
+                                        <input type="text" class="form-control" width="40px" placeholder="Số điện thoại">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="input-group">
+                                        <label for="#">Địa chỉ nhận hàng</label>
+                                        <div class="col-md-8 m-0 p-0">
+                                            <div class="form-check-inline">
+                                                <label for="shop" class="form-check-label">
+                                                    <input type="radio" name="adress" id="shop" class="form-check-input" value="Shop">Cửa hàng</label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <label for="home" class="form-check-label">
+                                                    <input type="radio" name="adress" id="home" class="form-check-input" value="Home">Nhà riêng</label>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-10">
+                                    <div class="input-group">
+                                        <select name="diachi" id="tinh" class="form-control">
+                                            <option value="default" hidden>Tỉnh/Thành Phố</option>
+                                        </select>
+                                        <select name="diachi" id="quan" class="form-control">
+                                            <option value="default" hidden>Quận/Huyện</option>
+                                        </select>
+                                        
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-10">
+                                    <div class="input-group">
+                                        <select name="diachi" id="tinh" class="form-control">
+                                            <option value="default" hidden>Phường/Xã</option>
+                                        </select>
+                                        <select name="diachi" id="quan" class="form-control">
+                                            <option value="default" hidden>Số nhà</option>
+                                        </select>
+                                        
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-10">
+                                    <div class="input-group my-1">
+                                        <textarea name="ghichu" id="ghichu" rows="4" class="form-control" placeholder="Ghi chú..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-information">
+                                <h3>Người nhận hộ</h3>
+                                <div class="row my-2">
+                                    <div class="col-5">
+                                        <div class="input-group my-2">
+                                            <input type="text" class="form-control" width="40px" placeholder="Họ và tên">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-5">
+                                        <div class="input-group my-1">
+                                            <input type="text" class="form-control" width="40px" placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pay"></div>
+                            <div class="sub-information2">
+                                <h3>Mã giảm giá</h3>
+                                <div class="row my-2">
+                                    <div class="col-5">
+                                        <div class="input-group my-2">
+                                            <input type="text" class="form-control" width="40px" placeholder="Mã">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pay"></div>
+                                <button type="submit" class="form-control my-2 btn-primary">Xác nhận</button>
+                        </form>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-1">
+            <div class="row col-md-12">
+            <div class="textbox">
+                <h5>CÔNG TY TNHH MTV MOBILE GTT</h5>
+                <p>Giấy phép kinh doanh: KD09 - Phòng Quản lý KDTDM</p>
+            </div>
+            <div class="right-f1">
+                <a href="#">
+                <img
+                    src="../img/zalo-u2013-video-call-app-for-windows-10-8-7-latest-version-zalo-gi-sc-nt-number-symbol-text-label-transparent-png-2710186.png"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="#">
+                <img
+                    src="https://www.facebook.com/images/fb_icon_325x325.png"
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="#">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Messenger_logo_2018.svg/2048px-Facebook_Messenger_logo_2018.svg.png"
+                    alt=""
+                    srcset=""
+                /></a>
+            </div>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="row col-md-12">
+            <div class="textbox-2">
+                <h5>
+                Địa chỉ: Số 598, Đại lộ Bình Dương, Thủ Dầu Một, Bình Dương
+                <br />Hotline: 039 888 999
+                </h5>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

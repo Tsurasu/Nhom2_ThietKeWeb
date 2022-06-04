@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/chitietsanpham.css" />
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <!--js-->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+  <title>CHI TIẾT SẢN PHẨM</title>
+</head>
+
+<body class="body">
+  <div class="container">
+    <div class="header header--mobile">
+      <div class="row col-md-12 p-0 m-0 top-logo">
+        <div class="col-lg-2 col-md-2 m-0 p-0 logo-home">
+          <a href="home.html" class="logo-home-flex">
+            <img src="/img/LOGO.png" alt="" srcset="" width="100%" height="140px" class="img-logo-home" />
+          </a>
+          <div class="logo-home-login">
+            <form class="search-login-mob">
+              <input class="form-control mr-2 search-login-mob" type="search" placeholder="Tìm kiếm..." />
+              <i class="fa fa-search icon-search-mob"></i>
+            </form>
+            <div>
+
+              <a class="register-mob" href="#" data-toggle="modal" data-target="#myModal3mob">ĐĂNG KÝ</a>
+
+              <a href="#" class="login-mob" data-toggle="modal" data-target="#myModal2mob">ĐĂNG NHẬP <i></i></a>
+            </div>
+
+          </div>
+
+        </div>
+        <nav
+          class="col-lg-10 col-md-10 col-10 p-4 navbar navbar-expand-md big-black navbar-dark navbar--home px-1 sitcky-top nav-login-home navbar-container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon right"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <form class="form-inline my-3">
+              <input class="form-control mr-2 search-bar" type="search" placeholder="Tìm kiếm..." />
+              <i class="fa fa-search icon-search"></i>
+            </form>
+            <div class="my-md-4 header-links ">
+              <a class="px-5 text-white" href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</a>
+
+              <a href="#" class=" text-white" data-toggle="modal" data-target="#myModal2">ĐĂNG NHẬP <i></i></a>
+
+              <!--THANH MENU NE-->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header modal-css">
+                      <h2 class="modal-title">ĐĂNG KÝ</h2>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body modal-css">
+                      <form action="">
+                        <div class="form-group">
+                          <label for="">Họ và tên:</label>
+                          <input type="" class="form-control" id="" placeholder="Họ và tên" name="">
+
+                          <label for="">Số điện thoại</label>
+                          <input type="" class="form-control" id="" placeholder="Số điện thoai" name="">
+                          <label for="">Ngày sinh:</label>
+                          <input type="date" class="form-control datee">
+                          <label for="">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                        </div>
+                        <div class="form-group form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name=""> Đồng ý với các điều
+                            khoản</label>
+                        </div>
+
+                      </form>
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer modal-css">
+                      <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG KÝ NGAY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal" id="myModal2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!--Modal Header-->
+                    <div class="modal-header modal-css">
+                      <h2 class="modal-title">ĐĂNG NHẬP</h2>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!--Modal body -->
+                    <div class="modal-body modal-css">
+                      <form action="">
+                        <div class="form-group">
+
+                          <label for="">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                      </form>
+                    </div>
+                    <!--Modal footer -->
+                    <div class="modal-footer modal-css">
+                      <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG NHẬP NGAY</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+      </div>
+      </nav>
+    </div>
+    <div class="row col-md-12 p-0 m-0">
+      <div class="col-md-12">
+        <div class="row nav">
+          <nav class="navbar navbar-expand-md big-black navbar-dark px-1 sitcky-top navbar-btn">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon right"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="../html/home.html">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="../html/trang-san-pham.html">SẢN PHẨM</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="../html/trang-tin-tuc-khuyen-mai.html">TIN TỨC - KHUYẾN MÃI</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="../html/trang-lien-he.html">LIÊN HỆ</a>
+                </li>
+                <li class="nav-item px-2 ">
+                  <a class="nav-link" href="#">GIỎ HÀNG</a>
+
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="body-content">
+    <div class="container">
+      <h3 class="canhchu">CHI TIẾT SẢN PHẨM</h3>
+
+
+      <div class="container">
+        <div class="row row-container">
+          <div class="col-md-4 col-sm-12 contaitner-chinhanh">
+            <img class="chinhanh2" src="../PHOTO/SAN-PHAM/sanpham1-1.JPG" alt="san pham 1 ne">
+            <div class=" col-md-4 col-md-12">
+              <img class="chinhanh" src="../PHOTO/SAN-PHAM/sanpham1-1.JPG" alt="san pham 1 ne">
+              <img class="chinhanh" src="../PHOTO/SAN-PHAM/sanpham1-1.JPG" alt="san pham 1 ne">
+              <img class="chinhanh" src="../PHOTO/SAN-PHAM/sanpham1-1.JPG" alt="san pham 1 ne">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 trangtt">
+            <h3 class="chinhchu">IPhone 13 Chính hãng VN/A(128GB, 256GB, 512GB)</h3>
+            <p class="chinhchu"><span class="chinhchu">Thương hiệu:</span> <img class="thuonghieune"
+                src="/img/ICON-IP-removebg-preview.png" alt="" width="100px"></p>
+            <p class="chinhchu"><span class="chinhchu">Giá tiền:</span><span class="giatien"> 23.500.000đ</span></p>
+            <p class="chinhchu"><span>Năm sản xuất:</span> 2022</p>
+            <div class="btn-chinhchu">
+              <a href="#" class="btn btn-primary">MUA NGAY</a>
+              <a href="#" class="btn btn-primary">THÊM VÀO GIỎ</a>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 col-sm-12" style="display: none;">
+            <div class="col-md-3 col-sm-6 pb-1 pb-md-0">
+              <div class="card">
+                <a href="chi-tiet-san-pham.html">
+                  <img class="card-img-top" src="../PHOTO/SAN-PHAM/sanpham1.JPG" alt="Card image cap" />
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="btn-ttsp">
+            <div class="card bao-hanh">
+              <h5 class="ml-2 mt-2">Thông tin sản phẩm</h5>
+              <ul>
+                <li>Bảo hành 12 tháng <strong>Chính hãng Iphone tại nhà 24/7</strong>.</li>
+                <li>Đổi mới trong <strong>15 ngày đầu tiên</strong></li>
+                <li><strong>Màn hình:</strong>	Super Retina XDR OLED, HDR10, Dolby Vision
+                  6.1 inches, (~460 ppi), 800 nits (HBM), 1200 nits (peak)
+                  1170 x 2532 pixels, 19.5:9 ratio
+                </li>
+                <li><strong>Hệ điều hành:</strong>	iOS 15</li>
+                <li><strong>CPU:</strong>	Apple A15 Bionic (5 nm)
+                  6 nhân (2x3.22 GHz Avalanche + 4xX.X GHz Blizzard)
+                  GPU: Apple GPU (4-core graphics)</li>
+                <li><strong>RAM:</strong>	4GB</li>
+                <li><strong>Bộ nhớ trong:</strong>	128-512GB NVMe</li>
+                <li><strong>Thẻ SIM:</strong>	2 SIM (1 eSIM)</li>
+                <li><strong>Thiết kế:</strong>	Thanh + cảm ứng</li>
+              </ul>
+            
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <!--PHAN CAC NHAN HANG LOGO-->
+  <div class="container">
+    <h3 class="canhchu">CÁC HÃNG ĐỒNG HÀNH CÙNG CHÚNG TÔI</h3>
+    <marquee direction="left" scrolldelay="1" scrollamount="20" onmouseover="this.stop()" onmouseout="this.start()">
+        <img border="0" class="broder" src="/img/logo-iphone.jpg"/>
+        <img border="0" class="broder" src="/img/logo-mi.jpg"/>
+        <img border="0" class="broder" src="/img/logo-nokia.jpg"/>
+        <img border="0" class="broder" src="/img/logo-oppo.jpg"/>
+        <img border="0" class="broder" src="/img/logo-samsung.jpg"/>
+    </marquee>
+  </div>
+  <!--PHAN FOOOTER-->
+  <div class="container">
+    <div class="footer">
+      <div class="footer-1">
+        <div class="row col-md-12">
+          <div class="textbox">
+            <h5>CÔNG TY TNHH MTV MOBILE GTT</h5>
+            <p>Giấy phép kinh doanh: KD09 - Phòng Quản lý KDTDM</p>
+          </div>
+          <div class="right-f1">
+            <a href="#">
+              <img
+                src="../img/zalo-u2013-video-call-app-for-windows-10-8-7-latest-version-zalo-gi-sc-nt-number-symbol-text-label-transparent-png-2710186.png"
+                alt="" srcset="" /></a>
+            <a href="#">
+              <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="" srcset="" /></a>
+            <a href="#">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Messenger_logo_2018.svg/2048px-Facebook_Messenger_logo_2018.svg.png"
+                alt="" srcset="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="row col-md-12">
+          <div class="textbox-2">
+            <h5>
+              Địa chỉ: Số 598, Đại lộ Bình Dương, Thủ Dầu Một, Bình Dương
+              <br />Hotline: 039 888 999
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--thêm hiệu ứng điện thoại rung lắc-->
+    <div class="hotline-phone-ring-wrap">
+      <div class="hotline-phone-ring">
+        <div class="hotline-phone-ring-circle"></div>
+        <div class="hotline-phone-ring-circle-fill"></div>
+        <div class="hotline-phone-ring-img-circle">
+          <a href="tel:0987654321" class="pps-btn-img">
+            <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại"
+              width="50">
+          </a>
+        </div>
+      </div>
+      <div class="hotline-bar">
+        <a href="tel:0987654321">
+          <span class="text-hotline">039.402.2121</span>
+        </a>
+      </div>
+    </div>
+    <!---->
+    <!-- modal login mob -->
+    <div class="modal" id="myModal2mob" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+      <!--Modal Header -->
+      <div class="modal-header modal-css">
+        <h2 class="modal-title">ĐĂNG NHẬP</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body modal-css">
+        <form action="">
+          <div class="form-group">
+
+            <label for="">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer modal-css">
+        <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG NHẬP NGAY</button>
+      </div>
+    </div>
+
+
+    <!-- t -->
+  </div>
+  <!-- modal register mob -->
+  <div class="modal" id="myModal3mob" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+
+    <!-- Modal Header -->
+    <div class="modal-header modal-css">
+      <h2 class="modal-title">ĐĂNG KÝ</h2>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body modal-css">
+      <form action="">
+        <div class="form-group">
+          <label for="">Họ và tên:</label>
+          <input type="" class="form-control" id="" placeholder="Họ và tên" name="">
+
+          <label for="">Số điện thoại</label>
+          <input type="" class="form-control" id="" placeholder="Số điện thoai" name="">
+          <label for="">ngày sinh::</label>
+          <input type="date" class="form-control datee">
+          <label for="">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name=""> Đồng ý với các điều
+            khoản</label>
+        </div>
+
+      </form>
+
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer modal-css">
+      <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG KÝ NGAY</button>
+    </div>
+  </div>
+  <!--on the top button-->
+  <!-- import icon font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <!-- Import thư viện JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+    var offset = 200;
+    // thời gian di trượt 0.75s ( 1000 = 1s )
+    var duration = 750;
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > offset)
+          $('#top-up').fadeIn(duration); else
+          $('#top-up').fadeOut(duration);
+      });
+      $('#top-up').click(function () {
+        $('body,html').animate({ scrollTop: 0 }, duration);
+      });
+    });
+  </script>
+  <div title="Về đầu trang" id="top-up">
+    <i class="fas fa-arrow-circle-up"></i>
+  </div>
+  </div>
+
+</body>
+
+</html>
+</div>
+
+
+</body>
+

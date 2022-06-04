@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/khuyen-mai.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="/css/home.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/css/chitiettintuckhuyenmai.css"></script>
+
+    <title>CHI TIẾT TIN TỨC - KHUYẾN MÃI</title>
+    <style>
+      @media screen and (max-width: 414px) {
+        .list-item-comment{
+            flex-direction: column;
+        }
+        .card-containier{
+          width: 100% !important;
+        }
+        
+        .nav-login-home{
+          display: none;
+        }
+        .card-containier{
+          height: inherit ;
+        }
+      }
+      
+    </style>
+</head>
+<body class="body">
+    
+    <!-- header -->
+    <div class="container">
+        <div class="header header--mobile">
+          <div class="row col-md-12 p-0 m-0 top-logo">
+            <div class="col-lg-2 col-md-2 m-0 p-0 logo-home">
+              <a href="home.html" class="logo-home-flex">
+              <img
+                src="/img/LOGO.png"
+                alt=""
+                srcset=""
+                width="100%"
+                height="140px"
+                class="img-logo-home"
+              />
+            </a>
+            <div class="logo-home-login">
+              <form class="search-login-mob">
+                <input
+                  class="form-control mr-2 search-login-mob"
+                  type="search"
+                  placeholder="Tìm kiếm..."
+                />
+                <i class="fa fa-search icon-search-mob"></i>
+              </form>
+              <div class="form-login-register">
+  
+                <a class="register-mob" href="#" data-toggle="modal" data-target="#myModal3mob">ĐĂNG KÝ</a>
+    
+                <a href="#" class="login-mob" data-toggle="modal" data-target="#myModal2mob">ĐĂNG NHẬP <i
+                    ></i></a>
+              </div>
+  
+            </div>
+            
+            </div>
+            <nav
+              class="col-lg-10 col-md-10 col-10 p-4 navbar navbar-expand-md big-black navbar-dark navbar--home px-1 sitcky-top nav-login-home"
+            >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+              >
+                <span class="navbar-toggler-icon right"></span>
+              </button>
+              <div class="collapse navbar-collapse">
+                <form class="form-inline my-3">
+                  <input
+                    class="form-control mr-2 search-bar"
+                    type="search"
+                    placeholder="Tìm kiếm..."
+                  />
+                  <i class="fa fa-search icon-search"></i>
+                </form>
+              <div class="my-md-4 header-links ">
+                <a class="px-5 text-white" href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</a>
+  
+                <a href="#" class=" text-white" data-toggle="modal" data-target="#myModal2">ĐĂNG NHẬP <i
+                    ></i></a>
+          
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+  
+                      <!-- Modal Header -->
+                      <div class="modal-header modal-css">
+                        <h2 class="modal-title">ĐĂNG KÝ</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body modal-css">
+                        <form action="">
+                          <div class="form-group">
+                            <label for="">Họ và tên:</label>
+                            <input type="" class="form-control" id="" placeholder="Họ và tên" name="">
+  
+                            <label for="">Số điện thoại</label>
+                            <input type="" class="form-control" id="" placeholder="Số điện thoai" name="">
+                            <label for="">ngày sinh::</label>
+                            <input type="date" class="form-control datee">
+                            <label for="">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"
+                              name="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                              name="pswd">
+                          </div>
+                          <div class="form-group form-check">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox" name=""> Đồng ý với các điều
+                              khoản</label>
+                          </div>
+  
+                        </form>
+  
+                      </div>
+  
+                      <!-- Modal footer -->
+                      <div class="modal-footer modal-css">
+                        <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG KÝ NGAY</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="modal" id="myModal2">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+  
+                      <!--Modal Header -->
+                      <div class="modal-header modal-css">
+                        <h2 class="modal-title">ĐĂNG NHẬP</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+  
+                      <!-- Modal body -->
+                      <div class="modal-body modal-css">
+                        <form action="">
+                          <div class="form-group">
+  
+                            <label for="">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email"
+                              name="email">
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                              name="pswd">
+                        </form>
+                      </div>
+                      <!-- Modal footer -->
+                      <div class="modal-footer modal-css">
+                        <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG NHẬP NGAY</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>         
+            </nav>
+          </div>
+          <div class="row col-md-12 p-0 m-0">
+            <div class="col-md-12">
+              <div class="row nav">
+                <nav
+                  class="navbar navbar-expand-md big-black navbar-dark px-1 sitcky-top btn-tongle"
+                >
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapsibleNavbar"
+                  >
+                    <span class="navbar-toggler-icon right"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/home.html">TRANG CHỦ</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/trang-san-pham.html">SẢN PHẨM </a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/trang-tin-tuc-khuyen-mai.html">TIN TỨC - KHUYẾN MÃI</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="../html/trang-lien-he.html">LIÊN HỆ</a>
+                      </li>
+                      <li class="nav-item px-2 ">
+                        <a class="nav-link" href="#">GIỎ HÀNG</a>
+                        
+                     </li>
+                    </ul>
+                    
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- content -->
+    <div class="container body-content">
+        <div class="row link">
+        <a href="#"><h5><b>Tin tức</b></h5></a><h5 class="ml-1">/</h5>
+        <a href="#"> <h5><b class="ml-1">Khuyến mãi</b></h5> </a>   
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center">
+                    <h2 class="text-uppercase my-3 "> nhân dịp iPhone 14 ra mắt giảm giá iPhone 13 50% </h2>
+                </div>
+            </div>
+            
+        </div>
+        <div class="header-banner">
+            <img class="img-fluid" src="../PHOTO/BANNER/banner3.JPG" alt="" srcset="">
+        </div>
+        <div class="row mt-5 px-4">
+            <div class="col-md-12">
+                <div class="sub-title"><h3>iPhone 14 ra mắt</h3></div>
+                <div class="description"><p class="text-justify">Sau bao nhiêu ngày chờ đợi cuối cùng <a href="#" style="text-decoration: none;">iPhone 14</a> cũng chính thức ra mắt, là sản phẩm mới của SamSung, iSum chính thức trở thành điện thoại cân tất cả mọi loại điện thoại trên thế giới, tuyên bố điểm khác biệt lớn nhất so với iPhone 13 là có thêm 1 con mắt camera. Tuy nhiên, chính vì sự khác biệt to lớn như thế nên chúng tôi đã phải làm việc rất vất vã để tạo ra sản phẩm này, và chúng tôi sẽ cần phải lấy lại những giá trị mà chúng tôi đã bỏ ra. Vì thế chúng tôi dự định bán chiếc iPhone 14 này với giá 100 triệu đồng.</p></div>
+                <div class="sub-title2">
+                    <h3>Giảm giá iPhone 13</h3>
+                    <div class="description2"><p class="text-justify">Chính vì giá iPhone 14 mắc như trên trời trong khi chúng tôi GTT Shop đéo thấy có sự khác biệt gì với iPhone 13 ngoại trừ có thêm 1 con mắt mà giá chênh tới mấy chục triệu, chính vì thấy sự khát máu như thế, chúng tôi buộc phải giảm giá iPhone 13 để iPhone 14 khỏi thằng cc nào mua, sau đó SamSung kiểu gì cũng phải giảm giá nó xuống thôi.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 px-2">
+            <div class="col-md-12">
+                <div class="end-title my-2"><h3>Các bài viết liên quan</h3></div>
+                <div class="list d-flex list-item-comment">
+                    <div class="col-md-3">
+                        <a href="#" class="card-item">
+                            <div class="card my-2 card-containier" style="width: 15rem;">
+                                <img class="card-img-top" src="../PHOTO/TIN-TUC/tintuc1.gif">
+                                <div class="card-body">
+                                    <p class="description-text">Khuyến mãi điện thoại xiaomi nhân dịp sinh nhật Apple</p>
+        
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="card-item">
+                            <div class="card my-2 card-containier" style="width: 15rem;">
+                                <img class="card-img-top" src="../PHOTO/TIN-TUC/tintuc1.gif">
+                                <div class="card-body">
+                                    <p class="description-text">Khuyến mãi điện thoại xiaomi nhân dịp sinh nhật Apple</p>
+        
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="card-item">
+                            <div class="card my-2 card-containier" style="width: 15rem;">
+                                <img class="card-img-top" src="../PHOTO/TIN-TUC/tintuc1.gif">
+                                <div class="card-body">
+                                    <p class="description-text">Khuyến mãi điện thoại xiaomi nhân dịp sinh nhật Apple</p>
+        
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="card-item">
+                            <div class="card my-2 card-containier" style="width: 15rem;">
+                                <img class="card-img-top" src="../PHOTO/TIN-TUC/tintuc1.gif">
+                                <div class="card-body">
+                                    <p class="description-text">Khuyến mãi điện thoại xiaomi nhân dịp sinh nhật Apple</p>
+        
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-content">
+            <div class="end-title my-2"><h3>Bình luận</h3></div>
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-11 border mb-2">
+                    <div class="d-flex flex-column comment-section">
+                        <div class="bg-white p-2">
+                            <div class="d-flex flex-row user-info"><img class="rounded-circle ava" src="/img/meme.jpg" width="40">
+                                <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Tuấn Phạm</span><span class="date text-black-50">Tháng 1 2020</span></div>
+                            </div>
+                            <div class="mt-2">
+                                <p class="comment-text">Bài viết như cc, phải tôi tôi đấm cho mấy phát</p>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <div class="d-flex flex-row">
+                                <div class="p-2 cursor"><i class="ic fa fa-thumbs-up"></i><span class="ml-1">Like</span></div>
+                                <div class="p-2 cursor"><i class="ic fa fa-comment-dots"></i><span class="ml-1">Comment</span></div>
+                                <div class="p-2 cursor"><i class="ic fa fa-share"></i><span class="ml-1">Share</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-light p-2">
+                            <div class="d-flex flex-row"><img class="rounded-circle mt-1 mr-1 ava" src="/img/meme.jpg" ><textarea class="form-control"></textarea></div>
+                            <div class="mt-2 text-right"><button class="btn btn-primary btn-sm" type="button">Đăng</button><button class="btn btn-outline-primary btn-sm ml-1" type="button">Hủy</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-11 border mb-2">
+                  <div class="d-flex flex-column comment-section">
+                      <div class="bg-white p-2">
+                          <div class="d-flex flex-row user-info"><img class="rounded-circle ava" src="/img/meme2.jpg" width="40">
+                              <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Nguyễn Văn Giàu</span><span class="date text-black-50">Tháng 5 2022</span></div>
+                          </div>
+                          <div class="mt-2">
+                              <p class="comment-text">Bài viết này quá hay, tôi rất thích</p>
+                          </div>
+                      </div>
+                      <div class="bg-white">
+                          <div class="d-flex flex-row">
+                              <div class="p-2 cursor"><i class="ic fa fa-thumbs-up"></i><span class="ml-1">Like</span></div>
+                              <div class="p-2 cursor"><i class="ic fa fa-comment-dots"></i><span class="ml-1">Comment</span></div>
+                              <div class="p-2 cursor"><i class="ic fa fa-share"></i><span class="ml-1">Share</span></div>
+                          </div>
+                      </div>
+                      <div class="bg-light p-2">
+                          <div class="d-flex flex-row"><img class="rounded-circle mt-1 mr-1 ava" src="/img/meme2.jpg" ><textarea class="form-control"></textarea></div>
+                          <div class="mt-2 text-right"><button class="btn btn-primary btn-sm" type="button">Đăng</button><button class="btn btn-outline-primary btn-sm ml-1" type="button">Hủy</button></div>
+                      </div>
+                  </div>
+              </div>
+
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- footer -->
+    <div class="container">
+      <div class="footer">
+        <div class="footer-1">
+          <div class="row col-md-12">
+            <div class="textbox">
+              <h5>CÔNG TY TNHH MTV MOBILE GTT</h5>
+              <p>Giấy phép kinh doanh: KD09 - Phòng Quản lý KDTDM</p>
+            </div>
+            <div class="right-f1">
+              <a href="#">
+                <img
+                  src="../img/zalo-u2013-video-call-app-for-windows-10-8-7-latest-version-zalo-gi-sc-nt-number-symbol-text-label-transparent-png-2710186.png"
+                  alt=""
+                  srcset=""
+              /></a>
+              <a href="#">
+                <img
+                  src="https://www.facebook.com/images/fb_icon_325x325.png"
+                  alt=""
+                  srcset=""
+              /></a>
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Messenger_logo_2018.svg/2048px-Facebook_Messenger_logo_2018.svg.png"
+                  alt=""
+                  srcset=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-2"> 
+          <div class="row col-md-12">
+            <div class="textbox-2">
+              <h5>
+                Địa chỉ: Số 598, Đại lộ Bình Dương, Thủ Dầu Một, Bình Dương
+                <br />Hotline: 039 888 999
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--thêm hiệu ứng điện thoại rung lắc-->
+      <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+          <div class="hotline-phone-ring-circle"></div>
+          <div class="hotline-phone-ring-circle-fill"></div>
+          <div class="hotline-phone-ring-img-circle">
+          <a href="tel:0987654321" class="pps-btn-img">
+            <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+          </a>
+          </div>
+        </div>
+        <div class="hotline-bar">
+          <a href="tel:0394022121">
+            <span class="text-hotline">039.402.2121</span>
+          </a>
+        </div>
+      </div> 
+      <!-- modal login mob -->
+      <div class="modal" id="myModal2mob" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                
+        <!--Modal Header -->
+        <div class="modal-header modal-css">
+          <h2 class="modal-title">ĐĂNG NHẬP</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body modal-css">
+          <form action="">
+            <div class="form-group">
+
+              <label for="">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email"
+                name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                name="pswd">
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer modal-css">
+          <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG NHẬP NGAY</button>
+        </div>
+        </div>
+          
+        
+  <!-- t -->
+</div>
+<!-- modal register mob -->
+<div class="modal" id="myModal3mob" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          
+        
+              <!-- Modal Header -->
+              <div class="modal-header modal-css">
+                <h2 class="modal-title">ĐĂNG KÝ</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body modal-css">
+                <form action="">
+                  <div class="form-group">
+                    <label for="">Họ và tên:</label>
+                    <input type="" class="form-control" id="" placeholder="Họ và tên" name="">
+        
+                    <label for="">Số điện thoại</label>
+                    <input type="" class="form-control" id="" placeholder="Số điện thoai" name="">
+                    <label for="">ngày sinh::</label>
+                    <input type="date" class="form-control datee">
+                    <label for="">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email"
+                      name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password"
+                      name="pswd">
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name=""> Đồng ý với các điều
+                      khoản</label>
+                  </div>
+        
+                </form>
+        
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer modal-css">
+                <button type="button" class="btn btn-info m-auto" data-dismiss="modal">ĐĂNG KÝ NGAY</button>
+              </div>
+            </div>
+      <!--on the top button--> 
+      <!-- import icon font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<!-- Import thư viện JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 500;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 750;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+</script>
+<div title="Về đầu trang" id="top-up">
+<i class="fas fa-arrow-circle-up"></i></div>
+    </div>
+    </body>
+</html>

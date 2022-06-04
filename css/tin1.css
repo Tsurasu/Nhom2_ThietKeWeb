@@ -1,0 +1,45 @@
+.kieuchu{
+    font-size:18px;
+    text-transform:uppercase;
+    margin-top:10px;
+    margin-bottom:5px;
+    color:#10171f;
+}
+.new-post-item .new-post-item-inner{
+    position:relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.new-post-item .new-post-item-inner .post-avatar{
+    height:220px;
+    overflow:hidden;
+}
+.new-post-item .new-post-item-inner .post-avatar img{
+        object-fit:cover;
+        width:100%;
+}
+.post-content{
+        position:absolute;
+        padding:15px;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        background-color:rgba(0,0,0,0.2);
+        transition:background-color 0.3s ease;
+}
+.post-content:hover{
+    background-color:rgba(0,0,0,0.4);
+}
+.new-post-item .new-post-item-inner .post-content h3{
+    font-size:18px;
+    line-height:25px;
+    margin-bottom:15px;
+    max-height:75px;
+    
+}
+.text-white{
+    color:#fff;
+}
+
+   

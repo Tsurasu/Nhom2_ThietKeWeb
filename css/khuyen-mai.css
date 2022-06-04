@@ -1,0 +1,47 @@
+.body-content{
+    background-color: #fff;
+}
+.link{
+    padding: 15px 10px 5px 10px;
+    border-bottom: 4px solid #ccc !important;
+}
+.end-title{
+    border-bottom: 2px solid #ccc !important;
+}
+.card-item{
+    text-decoration: none !important;
+}
+.description-text{
+    margin-bottom: 0;
+    color: #000;
+    font-size: 14px;
+}
+.description2,
+.description{
+    font-size: 18px;
+}
+.date{
+    font-size: 15px;
+    color: #ccc;
+}
+
+
+.name{
+    color: #007bff;
+    font-size: 18px;
+}
+.cursor:hover{
+    color: blue;
+}
+.cursor{
+    cursor: pointer;
+}
+.ic{
+    font-size: 15px !important;
+}
+.ava{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+
+}

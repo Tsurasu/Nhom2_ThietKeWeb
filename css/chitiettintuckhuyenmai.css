@@ -1,0 +1,15 @@
+@media screen and (max-width: 414px) {
+    .list-item-comment{
+        flex-direction: column;
+    }
+    .card-containier{
+      width: 100% !important;
+    }
+    
+    .nav-login-home{
+      display: none;
+    }
+    .card-containier{
+      height: inherit ;
+    }
+  }
